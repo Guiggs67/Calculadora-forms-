@@ -17,7 +17,7 @@ namespace Calculadora
         int operacao;
         double resul;
         double op = 0;
-        int cont = 0;
+        int cont = 1;
 
         public List<int> Mlista = new List<int>();
     
@@ -168,7 +168,27 @@ namespace Calculadora
 
         private void button18_Click(object sender, EventArgs e)
         {
-            double media = op / cont;
+            valor_2 = double.Parse(textBox1.Text, CultureInfo.InvariantCulture);
+            op += valor_2;
+            double media=0;
+
+            if (operacao == 1)
+            {
+                media = op / cont;
+            }
+            if (operacao == 2)
+            {
+                media = op / cont;
+            }
+            if (operacao == 3)
+            {
+                media = op / cont;
+            }
+            if (operacao == 4)
+            {
+                media = op / cont;
+            }
+            
             textBox1.Text = media.ToString();
 
         }
